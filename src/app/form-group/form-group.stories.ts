@@ -1,11 +1,11 @@
-import {moduleMetadata, storiesOf} from '@storybook/angular';
+import {moduleMetadata} from '@storybook/angular';
 import {FormGroupModule} from './form-group.module';
 import {InputModule} from '../input/input.module';
 import {withKnobs, text, number} from '@storybook/addon-knobs';
 
 export default {
   title: 'Components | Form Group',
-  decorators: [moduleMetadata({
+  decorators: [withKnobs, moduleMetadata({
     imports: [FormGroupModule, InputModule]
   })]
 };
