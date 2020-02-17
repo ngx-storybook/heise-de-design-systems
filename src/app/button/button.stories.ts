@@ -1,9 +1,9 @@
 import {ButtonComponent} from './button.component';
-import {text} from '@storybook/addon-knobs';
+import { text, withKnobs } from '@storybook/addon-knobs';
 
 export default {
   title: 'Components | Button',
-  component: ButtonComponent,
+  decorators: [withKnobs]
 };
 
 export const primary = () => ({
