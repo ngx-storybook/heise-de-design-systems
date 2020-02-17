@@ -1,9 +1,13 @@
 import {ButtonComponent} from './button.component';
 import { text, withKnobs } from '@storybook/addon-knobs';
+import markdown from './button.component.md';
 
 export default {
   title: 'Components | Button',
-  decorators: [withKnobs]
+  decorators: [withKnobs],
+  parameters: {
+    notes: markdown
+  }
 };
 
 export const primary = () => ({
