@@ -13,6 +13,6 @@ export default {
 export const primary = () => ({
   component: ButtonComponent,
   props: {
-    label: text('Label', 'A different label')
+    label: text('Label', 'A label')
   }
 });
